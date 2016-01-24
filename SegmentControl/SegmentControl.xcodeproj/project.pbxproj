@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5C59E81C54B44900E43767 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C59E71C54B44900E43767 /* UIColor+Expanded.m */; };
 		1F5EBE5D1C5366DB00C727EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE5C1C5366DB00C727EA /* main.m */; };
 		1F5EBE601C5366DB00C727EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE5F1C5366DB00C727EA /* AppDelegate.m */; };
 		1F5EBE631C5366DC00C727EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE621C5366DC00C727EA /* ViewController.m */; };
@@ -15,6 +16,8 @@
 		1F5EBE6B1C5366DC00C727EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5EBE691C5366DC00C727EA /* LaunchScreen.storyboard */; };
 		1F5EBE761C5366DC00C727EA /* SegmentControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE751C5366DC00C727EA /* SegmentControlTests.m */; };
 		1F5EBE811C5366DC00C727EA /* SegmentControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE801C5366DC00C727EA /* SegmentControlUITests.m */; };
+		1F5EBE911C53674400C727EA /* SegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE901C53674400C727EA /* SegmentControl.m */; };
+		5B7F7178F30159EC5479D6F2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 465362F0EB57F10C45872CAE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F5C59E61C54B44900E43767 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		1F5C59E71C54B44900E43767 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
 		1F5EBE581C5366DB00C727EA /* SegmentControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5EBE5C1C5366DB00C727EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5EBE5E1C5366DB00C727EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		1F5EBE7C1C5366DC00C727EA /* SegmentControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmentControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5EBE801C5366DC00C727EA /* SegmentControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentControlUITests.m; sourceTree = "<group>"; };
 		1F5EBE821C5366DC00C727EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5EBE8F1C53674400C727EA /* SegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentControl.h; sourceTree = "<group>"; };
+		1F5EBE901C53674400C727EA /* SegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentControl.m; sourceTree = "<group>"; };
+		40F02F684ECD587A3CF1EB1C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		465362F0EB57F10C45872CAE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5842872966C11728042DB2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7F7178F30159EC5479D6F2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A980BA53FE35571F738859A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A5842872966C11728042DB2 /* Pods.debug.xcconfig */,
+				40F02F684ECD587A3CF1EB1C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1F5EBE4F1C5366DB00C727EA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,8 @@
 				1F5EBE741C5366DC00C727EA /* SegmentControlTests */,
 				1F5EBE7F1C5366DC00C727EA /* SegmentControlUITests */,
 				1F5EBE591C5366DB00C727EA /* Products */,
+				1A980BA53FE35571F738859A /* Pods */,
+				6EFB7A43F32A85BFD38693E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +123,9 @@
 		1F5EBE5A1C5366DB00C727EA /* SegmentControl */ = {
 			isa = PBXGroup;
 			children = (
+				1F5C59E61C54B44900E43767 /* UIColor+Expanded.h */,
+				1F5C59E71C54B44900E43767 /* UIColor+Expanded.m */,
+				1F5EBE8E1C53671F00C727EA /* SegmentControl */,
 				1F5EBE5E1C5366DB00C727EA /* AppDelegate.h */,
 				1F5EBE5F1C5366DB00C727EA /* AppDelegate.m */,
 				1F5EBE611C5366DB00C727EA /* ViewController.h */,
@@ -140,6 +165,23 @@
 			path = SegmentControlUITests;
 			sourceTree = "<group>";
 		};
+		1F5EBE8E1C53671F00C727EA /* SegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				1F5EBE8F1C53674400C727EA /* SegmentControl.h */,
+				1F5EBE901C53674400C727EA /* SegmentControl.m */,
+			);
+			path = SegmentControl;
+			sourceTree = "<group>";
+		};
+		6EFB7A43F32A85BFD38693E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				465362F0EB57F10C45872CAE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F5EBE851C5366DC00C727EA /* Build configuration list for PBXNativeTarget "SegmentControl" */;
 			buildPhases = (
+				51E6500EA4C46FE068009CE6 /* Check Pods Manifest.lock */,
 				1F5EBE541C5366DB00C727EA /* Sources */,
 				1F5EBE551C5366DB00C727EA /* Frameworks */,
 				1F5EBE561C5366DB00C727EA /* Resources */,
+				D51633B42DFBB5E6980B757F /* Embed Pods Frameworks */,
+				5A0F4404E1F61A0D292987AE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +310,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51E6500EA4C46FE068009CE6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A0F4404E1F61A0D292987AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D51633B42DFBB5E6980B757F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F5EBE541C5366DB00C727EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,6 +366,8 @@
 				1F5EBE631C5366DC00C727EA /* ViewController.m in Sources */,
 				1F5EBE601C5366DB00C727EA /* AppDelegate.m in Sources */,
 				1F5EBE5D1C5366DB00C727EA /* main.m in Sources */,
+				1F5EBE911C53674400C727EA /* SegmentControl.m in Sources */,
+				1F5C59E81C54B44900E43767 /* UIColor+Expanded.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +504,7 @@
 		};
 		1F5EBE861C5366DC00C727EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A5842872966C11728042DB2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SegmentControl/Info.plist;
@@ -420,6 +516,7 @@
 		};
 		1F5EBE871C5366DC00C727EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F02F684ECD587A3CF1EB1C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SegmentControl/Info.plist;
@@ -496,6 +593,7 @@
 				1F5EBE871C5366DC00C727EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F5EBE881C5366DC00C727EA /* Build configuration list for PBXNativeTarget "SegmentControlTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +602,7 @@
 				1F5EBE8A1C5366DC00C727EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F5EBE8B1C5366DC00C727EA /* Build configuration list for PBXNativeTarget "SegmentControlUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +611,7 @@
 				1F5EBE8D1C5366DC00C727EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

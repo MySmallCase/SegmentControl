@@ -8,7 +8,12 @@
 
 #import "ViewController.h"
 
+#import "SegmentControl.h"
+
 @interface ViewController ()
+
+@property (nonatomic,strong) SegmentControl *segementControl;
+@property (strong, nonatomic) NSArray *titlesArray;
 
 @end
 
@@ -16,12 +21,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.segementControl = [[SegmentControl alloc] initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 44) titleItems:self.titlesArray selectedBlock:^(NSInteger index){
+        
+    } normalTitleColor:nil selectedTitleColor:nil lineViewColor:nil bottomLineViewColor:nil];
+    
+    [self.view addSubview:self.segementControl];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSArray*)titlesArray
+{
+    if (nil == _titlesArray) {
+        _titlesArray = @[@"周", @"月", @"季", @"年", @"总排行"];
+    }
+    return _titlesArray;
 }
+
 
 @end
