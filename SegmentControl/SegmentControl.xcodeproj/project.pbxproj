@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F5C59E81C54B44900E43767 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C59E71C54B44900E43767 /* UIColor+Expanded.m */; };
+		1F5C59EB1C54BC2A00E43767 /* Test1ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C59EA1C54BC2A00E43767 /* Test1ListView.m */; };
+		1F5C59EE1C54C1AC00E43767 /* Test2ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C59ED1C54C1AC00E43767 /* Test2ListView.m */; };
 		1F5EBE5D1C5366DB00C727EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE5C1C5366DB00C727EA /* main.m */; };
 		1F5EBE601C5366DB00C727EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE5F1C5366DB00C727EA /* AppDelegate.m */; };
 		1F5EBE631C5366DC00C727EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EBE621C5366DC00C727EA /* ViewController.m */; };
@@ -40,6 +42,10 @@
 /* Begin PBXFileReference section */
 		1F5C59E61C54B44900E43767 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
 		1F5C59E71C54B44900E43767 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		1F5C59E91C54BC2A00E43767 /* Test1ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1ListView.h; sourceTree = "<group>"; };
+		1F5C59EA1C54BC2A00E43767 /* Test1ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test1ListView.m; sourceTree = "<group>"; };
+		1F5C59EC1C54C1AC00E43767 /* Test2ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ListView.h; sourceTree = "<group>"; };
+		1F5C59ED1C54C1AC00E43767 /* Test2ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ListView.m; sourceTree = "<group>"; };
 		1F5EBE581C5366DB00C727EA /* SegmentControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5EBE5C1C5366DB00C727EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5EBE5E1C5366DB00C727EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +141,10 @@
 				1F5EBE691C5366DC00C727EA /* LaunchScreen.storyboard */,
 				1F5EBE6C1C5366DC00C727EA /* Info.plist */,
 				1F5EBE5B1C5366DB00C727EA /* Supporting Files */,
+				1F5C59E91C54BC2A00E43767 /* Test1ListView.h */,
+				1F5C59EA1C54BC2A00E43767 /* Test1ListView.m */,
+				1F5C59EC1C54C1AC00E43767 /* Test2ListView.h */,
+				1F5C59ED1C54C1AC00E43767 /* Test2ListView.m */,
 			);
 			path = SegmentControl;
 			sourceTree = "<group>";
@@ -252,6 +262,7 @@
 				TargetAttributes = {
 					1F5EBE571C5366DB00C727EA = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = V9GR4BU3R6;
 					};
 					1F5EBE701C5366DC00C727EA = {
 						CreatedOnToolsVersion = 7.2;
@@ -364,9 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5EBE631C5366DC00C727EA /* ViewController.m in Sources */,
+				1F5C59EE1C54C1AC00E43767 /* Test2ListView.m in Sources */,
 				1F5EBE601C5366DB00C727EA /* AppDelegate.m in Sources */,
 				1F5EBE5D1C5366DB00C727EA /* main.m in Sources */,
 				1F5EBE911C53674400C727EA /* SegmentControl.m in Sources */,
+				1F5C59EB1C54BC2A00E43767 /* Test1ListView.m in Sources */,
 				1F5C59E81C54B44900E43767 /* UIColor+Expanded.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +520,7 @@
 			baseConfigurationReference = 6A5842872966C11728042DB2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SegmentControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.520dyw.www.SegmentControl;
@@ -519,6 +533,7 @@
 			baseConfigurationReference = 40F02F684ECD587A3CF1EB1C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SegmentControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.520dyw.www.SegmentControl;
